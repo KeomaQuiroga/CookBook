@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:proyecto_recetas/BDD/comida_BDD/comida_repositorio.dart';
 import 'package:proyecto_recetas/modelo/receta.dart';
@@ -11,7 +12,7 @@ class RecetaProvider extends ChangeNotifier {
   final RecetasRepositorio recetaRepositorio = RecetasRepositorio();
 
   Receta? receta;
-  final String _apiKey = '3f22fcd59aa44534a072541f515022a5';
+  final String _apiKey = dotenv.env['3f22fcd59aa44534a072541f515022a5'] ?? '';
 
   //metodos API
   Future<void> recetaAleatoria() async {
