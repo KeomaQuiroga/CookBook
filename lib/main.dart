@@ -5,7 +5,7 @@ import 'package:proyecto_recetas/pantallas/pantallas_principales/home_screen.dar
 import 'package:proyecto_recetas/provider/bebida_provider.dart';
 import 'package:proyecto_recetas/provider/receta_provider.dart';
 
-void main() async {
+Future<void> main() async {
   await dotenv.load();
   runApp(
     MultiProvider(
