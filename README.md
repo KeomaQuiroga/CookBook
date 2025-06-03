@@ -1,3 +1,3 @@
-# cookbook
+# Cookbook
 
-A new Flutter project.
+A simple receip app
