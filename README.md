@@ -1,3 +1,3 @@
 # Cookbook
 
-A simple receip app
+A simple recipe app
